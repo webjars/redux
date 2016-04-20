@@ -24,10 +24,8 @@
 		<destDir>${project.build.outputDirectory}/META-INF/resources/webjars/${project.artifactId}/${project.version}</destDir>
 		<requirejs>
 			{
-				"shim": {
-					"redux": {
-					    exports: 'Redux'
-					}
+				"paths": {
+					"redux": "redux"
 				}
 			}
 		</requirejs>
@@ -73,7 +71,7 @@
 								<echo message="create dist directory" />
 								<mkdir dir="${project.build.directory}/${project.artifactId}-${upstream.version}" />
 								<echo message="download source"/>
-								<get src="${upstream.url}/redux.min.js" dest="${project.build.directory}/${project.artifactId}-${upstream.version}/${project.artifactId}.min.js"/>
+								<get src="${upstream.url}/redux.min.js" dest="${project.build.directory}/${project.artifactId}-${upstream.version}/${project.artifactId}.js"/>
 								<echo message="moving resources"/>
 								<move todir="${destDir}">
 									<fileset dir="${project.build.directory}/${project.artifactId}-${upstream.version}"/>
