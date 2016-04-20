@@ -11,7 +11,7 @@
 	<packaging>jar</packaging>
 	<groupId>org.webjars</groupId>
 	<artifactId>redux</artifactId>
-	<version>3.4.0</version>
+	<version>3.4.1-SNAPSHOT</version>
 	<name>Redux</name>
 	<description>WebJar for Redux</description>
 	<url>http://webjars.org</url>
@@ -50,7 +50,7 @@
 		<url>http://github.com/webjars/redux</url>
 		<connection>scm:git:https://github.com/webjars/redux.git</connection>
 		<developerConnection>scm:git:https://github.com/webjars/redux.git</developerConnection>
-		<tag>redux-3.4.0</tag>
+		<tag>HEAD</tag>
 	</scm>
 
 	<build>
